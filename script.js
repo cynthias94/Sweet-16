@@ -504,19 +504,23 @@ document.addEventListener('DOMContentLoaded', () => {
             captionElement.textContent = memory.caption;
 
             if (memory.type === 'photo') {
-                imageElement.src = `../images/day6images/${memory.file}`;
+                // Corrected path: removed the '../'
+                imageElement.src = `images/day6images/${memory.file}`;
                 imageElement.style.display = 'block';
             } else if (memory.type === 'video') {
-                videoElement.src = `../images/day6images/${memory.file}`;
+                // Corrected path: removed the '../'
+                videoElement.src = `images/day6images/${memory.file}`;
                 videoElement.style.display = 'block';
                 videoElement.play();
             }
         }
 
-        nextBtn.addEventListener('click', () => {
-            currentMemoryIndex = (currentMemoryIndex + 1) % memories.length;
-            showMemory(currentMemoryIndex);
-        });
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                currentMemoryIndex = (currentMemoryIndex + 1) % memories.length;
+                showMemory(currentMemoryIndex);
+            });
+        }
 
         // Show the first memory when the gift is opened
         showMemory(currentMemoryIndex);
