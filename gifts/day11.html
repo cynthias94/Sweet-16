@@ -1,0 +1,35 @@
+<div id="day11-container" class="gift-content-wrapper">
+    <h3>Day 11: Design Your Dream Jersey</h3>
+    <p>Use the controls below to design your own custom soccer jersey with your favorite colors!</p>
+
+    <div id="jersey-creator">
+        <canvas id="jersey-canvas" width="400" height="400"></canvas>
+        <div id="controls">
+            <div class="control-group">
+                <h4>Base Color</h4>
+                <div id="color-options" class="options">
+                    <input type="color" id="base-color-picker" value="#ffffff">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h4>Pattern</h4>
+                <div id="pattern-options" class="options">
+                    <button class="pattern-btn" data-pattern="solid">Solid</button>
+                    <button class="pattern-btn" data-pattern="stripes">Stripes</button>
+                    <button class="pattern-btn" data-pattern="diagonal">Diagonal</button>
+                    <button class="pattern-btn" data-pattern="real-madrid">Real Madrid</button>
+                    <button class="pattern-btn" data-pattern="gradient">Gradient</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h4>Add Text</h4>
+                <input type="text" id="name-input" placeholder="Name" maxlength="10">
+                <input type="number" id="number-input" placeholder="##" min="0" max="99">
+            </div>
+
+            <button id="clear-btn">Clear Canvas</button>
+        </div>
+    </div>
+</div>

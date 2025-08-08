@@ -1,0 +1,82 @@
+<div id="gift-container-22" class="gift-container">
+  <div class="gift-header">
+      <h2>Day 22: Our Personal Mixtape</h2>
+      <p>Press play to listen to some memorable songs.</p>
+  </div>
+
+  <div id="custom-playlist" class="playlist-container">
+      </div>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .gift-container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .gift-header h2 {
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+
+    .gift-header p {
+        font-size: 1.1em;
+        color: #ccc;
+    }
+
+    .playlist-container {
+        padding: 15px;
+        background-color: #121212; /* Dark background */
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    /* THE KEY CHANGE IS HERE */
+    .song-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #282828; /* Slightly lighter gray for each song item */
+        color: #fff;
+    }
+
+    .song-info {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .song-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
+    .song-artist {
+        font-size: 0.9em;
+        color: #b3b3b3;
+    }
+
+    .song-caption {
+        font-style: italic;
+        font-size: 0.9em;
+        color: #b3b3b3;
+        text-align: left;
+    }
+    
+    audio {
+        width: 100%;
+        margin-top: 10px;
+    }
+</style>

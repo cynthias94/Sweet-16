@@ -1,0 +1,83 @@
+<div id="gift-container-18" class="gift-container">
+  <div class="gift-header">
+      <h2>Day 18: Top Memories</h2>
+      <p><h3>Iconic 7th-Grade Moments</h3></p>
+  </div>
+
+  <div class="memory-image-container">
+      <img src="images/day18images/503.jpg" alt="A photo from the best class!" class="memory-photo">
+  </div>
+
+  <div class="memories-container">
+      <p class="memories-intro">[Bro middle school was definitely iconic because of 503 and there's no doubt about that. So here's some iconic 503 memories.]</p>
+      <ul class="memories-list">
+          <li>Remember that time Ms.Kim  tied up all the guys' hair for crazy hair day or something like that. Bro I remember you and Adwaito with your little palm tree hairstyles. Literally iconic. I remember pulling out a bit of Adwaito's hair too while helping him take out the rubber band at the end of the day. I remember you trying to figure out how to tighten it all day too.</li>
+          <li>Remember culture day in 7th grade. Bro that day was sooo fun. Got all the desis, including the guys, to dress up. I remember having to get you involved to convince some of them, but so worth it. We all took a nice group pic with the desi munchers; really do wonder where that went. Bro you playing with the oonas was so funny too. "Jingly jingly" that's all you were saying that one period while you had mines because I was so sick of it by then. It's fine, you were defintiely taking care of it.</li>
+          <li>Remember that time you brought the cologne handsanitizer. Literally one of the most annoying experiences, and let me tell you there were a lot of them with you nearby. You would just not put that thing away. At some point it even spilled on my desk. That was the worst. Oh and then you brought it to lunch too and were asking some of the guys to sniff it while we were in the auditorium. I'm telling you that cologne smell was sooo strong and sooo nauseating.</li>
+          <li>Remember that time, around the end of 7th grade, when you lost your deck of cards. Bro I swear at that time you were more blind then me. I was with Susmita, honestly don't even remember what were talking about, but then you came quite literally out of nowhere. You were like, "Where's my cards, help me find them", something around those lines. i remember helping you search that whole classroom. Bro the cards were in the most obvious place, right under the smart board at the very back of the room, by OUR tables. Good going, Abdullai. Anyways, after that we did play one-on-one egyptian rat slap. That was fun. You know why? Because I actually beat you one game. We don't talk about the other three games though. </li>
+          <li>Remember that time when they were doing student council electives or whatever for some extra positions and you got in through that lottery thing. I remember the day you were supposed to have that "first meeting" your hair decided to  stick up like never before. At first Mirabelle and I couldn't stop laughing and would refuse to tell you. But I'm very nice you know so I told you when we were heading down to the auditorium for the lunch period. Bro, I remember this so clearly. We were seating in the aduitorium and I was trying to fix your hair. You poured water, which got all over the floor by the way, and I was trying to smooth out all the flying strands. Then we asked Adwaito for advice and obviously he was useless.</li>
+          <li>Remember that time that I did your henna for the first  time. Ms. Mastracolla was so on edge about it. She kept asking if  you asked for permission from your mom beforehand. That was very interesting. Honestly I could do so much better now but like you've had enough henna I think.</li>
+          <li>Remember that time when the whole class mastered Riptide on the ukulele. Bro that one day, I don't even remember how it started but for some reason the whole class ended up playing the ukulele and singing Riptide the loudest we possibly could. I think it was because 508 could hear us or something. I have no clue but that was so fun. We did it so many times that period too.</li>
+          <li>Alright this wasn't a big memory but remember that one period in Ms. Harvey's class. It was a music day so we all brought our ukuleles that day. I don't even know what you were do that period other than being the most annoying human being possible. Shoul've hit you with the ukulele case harder when I had the chance.</li>
+      </ul>
+  </div>
+</div>
+
+<style>
+  .memories-container {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+  }
+  .memories-intro {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .memories-list {
+      list-style-type: none;
+      padding-left: 0;
+  }
+  .memories-list li {
+      font-family: 'Georgia', serif;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+      background-color: #e8f5e9; /* Light green background */
+      padding: 15px;
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out;
+  }
+  .memories-list li:hover {
+      transform: scale(1.02); /* Slight zoom on hover */
+  }
+  .memories-list li::before {
+      content: counter(item) ".";
+      counter-increment: item;
+      color: #388e3c; /* Dark green color for numbers */
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -1.5em;
+  }
+  .memory-image-container {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .memory-photo {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+</style>
+
+<script>
+  // This is needed for the numbered list to work
+  document.querySelector('.memories-list').style.counterReset = 'item';
+</script>

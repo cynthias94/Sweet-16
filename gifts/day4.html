@@ -1,0 +1,27 @@
+<div id="day4-container">
+    <p>I know you're a HUGE Arijit Singh fan, so here's a short snippet of one of the most iconic songs. Let's see if you actually remembered.</p>
+
+    <audio id="snippet-audio" controls autoplay>
+        <source src="audio/audio/tum_hi_ho.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <form id="song-form">
+        <input type="text" id="song-guess" placeholder="Guess the song title" required>
+        <button id="song-submit-btn" type="submit">Submit</button>
+    </form>
+
+    <p id="song-result"></p>
+</div>
+
+<div id="song-gift-content" style="display: none;">
+    <h3>Looks like you actually did remember. Gonna make sure tum hi ho haunts you forever! <strong id="full-song-title"></strong></p>
+
+    <audio id="full-song-audio">
+        <source src="audio/audio/tum_hi_ho2.mp3" type="audio/mpeg">
+       
+    </audio>
+    <br>
+    <button id="toggle-full-song-btn">Play Full Song</button>
+    
+</div>

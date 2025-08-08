@@ -1,0 +1,83 @@
+<div id="gift-container-19" class="gift-container">
+  <div class="gift-header">
+      <h2>Day 19: Top Memories</h2>
+      <p><h3>Iconic 8th-Grade Moments</h3></p>
+  </div>
+
+  <div class="memory-image-container">
+      <img src="images/day19images/514.jpg" alt="A photo from our 8th grade year" class="memory-photo">
+  </div>
+
+  <div class="memories-container">
+      <p class="memories-intro">[Alright 514 was pretty good too, but still not as iconic as 503!]</p>
+      <ul class="memories-list">
+          <li>Remember Halloween! Bro that period before the dance when Ms. Battista let you people get ready for the dance afterschool. You getting your makeup done will always be funny. What were you even trying to go for?</li>
+          <li>Remember that last school day of 2022. We were in Bernstien's class and the man actually let us have a free period. That was so fun. You were attempting to do Sophia's hair but bro that was so bad. You messed her hair up real bad. Also I remember teaching Adwaito how to braid Shiloh's hair. That period really ended up about hair for some reason. You're never doing anyone's hair after that for sure.</li>
+          <li>Remember culture day, again? That year I remember you not being at school first couple of periods. That was weird because you're literally always there. Anyways the fits were awesome clearly, though we couldn't get a lot of the  guys like last time. Oh, but the best moment was when you randomly appeared during lunch. We were all out in the yard then you randomly showed up wearing a thobe. You looked good, you should do it again.</li>
+          <li>Bro this counts as like multiple memories at this point. The barking. Oh my days bro you and your barking in 8th grade. There are two specific instances I remember clearly. Firstly, that period in Ms. E's advisory class with the end of the world challenge and we had to decide who to keep in the layer and who to kick out. While me and Mirabelle and the rest of the girls were being very studious and interviewing people, you decided to come out of nowhere and start barking in my ear. Literally how did Ms. E not notice, my poor eardrums. Alright, second instance. We were all out, waiting for the bus stop afterschool. You and the guys were there that day for some reason. Then, when Elisa wasn't paying attention, you, being the person that you are, sneaked up and barked in her ear. Bro she screamed at you so bad. That was very well deserved on your part.</li>
+          <li>Remember that period of time when you kept yapping about karma or whatever and like good deeds. Well not that important but remember that one day when we had a gym period but when we arrived in the gym no one was there. All of us thought it was a free period, but  then, Aki I think, found out we had that period in the health room. While we all, though disappointed slightly, starting heading downstairs, you had the bright idea to skip and just walk around. Great going, Abdullai. Man pushing you towards the health classroom, while you had that cast, was one of the hardest things to do that I'm telling you.</li>
+          <li>Remember that time during Ramadan when you would go pray with the guys. That very first day you went off with them and the  whole time all I could think of was how you were doing. You did good though that month. Proud sister moment for sure.</li>
+          <li>Remember when we would always be playing cards in that back table in 514 around the end of the school year. That was so fun but bro you're literally the  biggest cheater. I swear you could've broken someone's hand with how hard you used to hit  the table. I saved myself though. You remember how? Because you would always play and win for me. See its fine if you cheated then.</li>
+          <li>Bro, remember the last day of school. That day was really something. I mean in the beginning, actually the  whole school day  in general, felt so normal. It really didn't feel like the last time that  we would be in middle school. Bro, do you remember me telling you afterwards about how cute Orian was that day. It was so sad saying goodbye to those 1st graders. You know he gave me a surprise hug from that back that day. That was so cute, miss that kid. Anyways, after the day ended was when the real waterworks began. Standing out there for 30 minutes was crazy. Also Braiden with his attempt to say my full name was so random. Oh and then at the park. Bro I remember Mannat and I trying to have our little moment then Pranay comes out of nowhere and starts splashing us with his wet hair. The guys playing like little kids in the sprinklers was definitely something.</li>
+      </ul>
+  </div>
+</div>
+
+<style>
+  .memories-container {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+  }
+  .memories-intro {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .memories-list {
+      list-style-type: none;
+      padding-left: 0;
+  }
+  .memories-list li {
+      font-family: 'Georgia', serif;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+      background-color: #e8f5e9; /* Light green background */
+      padding: 15px;
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out;
+  }
+  .memories-list li:hover {
+      transform: scale(1.02); /* Slight zoom on hover */
+  }
+  .memories-list li::before {
+      content: counter(item) ".";
+      counter-increment: item;
+      color: #388e3c; /* Dark green color for numbers */
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -1.5em;
+  }
+  .memory-image-container {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .memory-photo {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+</style>
+
+<script>
+  // This is needed for the numbered list to work
+  document.querySelector('.memories-list').style.counterReset = 'item';
+</script>

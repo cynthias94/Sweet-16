@@ -1,0 +1,79 @@
+<div id="gift-container-20" class="gift-container">
+  <div class="gift-header">
+      <h2>Day 20: Some Memories</h2>
+      <p><h3>Highschool Moments So Far</h3></p>
+  </div>
+
+  <div class="memory-image-container">
+      <img src="images/day20images/hs.jpg" alt="A photo from our 8th grade year" class="memory-photo">
+  </div>
+
+  <div class="memories-container">
+      <p class="memories-intro">[Well there's not much but good enough for now. There will be more, hopefully. (best photo I could find bro but it's BSGE so really don't care)]</p>
+      <ol class="memories-list">
+          <li>Remember when we would do the art exchange things during 9th grade, especially during the bestiary unit. The whole plan you conducted was definitely something. Oh and that lunch period where you gave me your painting so I could erase the pencil marks or whatever. Random but showed a little bit of that old middle school dynamic. </li>
+          <li>Remember during Wolov's class when we did Wolov bowls or whatever they're called. That one Wolov bowl, remember how we were doing kahoot and at some point my game just completely crashed. You wouldn't even know it crashed if I didn't show you the screen under the table. That webtoon was definitely more interesting. </li>
+          <li>Remember that day when there was a solar eclipse after school. I remember looking directly at the sky and someone (was it yelling can't remember) saying to not do that. Was that you? You see I thought it was you but wasn't sure. Either way, I'm just the type to not look back if someone is telling me something when I'm not sure they're actually talking to me if you know what I mean. But it's fine nothing  happened you were just a little bit too paranoid. </li>
+          <li>Remember that day with Mimi in Caccamo's class. Bro Mimi looking up at the chart right after he told her not too will always be something. Can't beleive I missed it but its whatever. I mean you and the guys, Nitta too, dragging it will still be funny for sure. </li>
+      </ol>
+  </div>
+</div>
+
+<style>
+  .memories-container {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+  }
+  .memories-intro {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .memories-list {
+      list-style-type: none;
+      padding-left: 0;
+  }
+  .memories-list li {
+      font-family: 'Georgia', serif;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+      background-color: #e8f5e9; /* Light green background */
+      padding: 15px;
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out;
+  }
+  .memories-list li:hover {
+      transform: scale(1.02); /* Slight zoom on hover */
+  }
+  .memories-list li::before {
+      content: counter(item) ".";
+      counter-increment: item;
+      color: #388e3c; /* Dark green color for numbers */
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -1.5em;
+  }
+  .memory-image-container {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .memory-photo {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+</style>
+
+<script>
+  // This is needed for the numbered list to work
+  document.querySelector('.memories-list').style.counterReset = 'item';
+</script>
